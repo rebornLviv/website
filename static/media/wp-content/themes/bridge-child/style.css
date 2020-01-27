@@ -1,0 +1,172 @@
+/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+.page-id-796 .title.title_size_medium
+{
+	background-position: 66% center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+/*#gform_wrapper_1 .large, #gform_wrapper_1 .medium, #gform_wrapper_1 .small, #gform_wrapper_1 .gfield_captcha_input_container input, #gform_wrapper_1 .ginput_complex span input, #gform_wrapper_1 .ginput_complex span select
+{
+	border: 1px solid #d3d3d3!important;
+	padding: 15px 0px 15px 20px!important;
+	background:transparent!important; 
+	color: #707070!important; 
+	margin:0px!important;
+    font-size: 18px !important;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: 400 !important;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+#gform_wrapper_1 .gfield_label, #gform_wrapper_1 .ginput_complex span label
+{ 
+    display:none!important;
+}*/
+#gform_wrapper_1  #field_2_5 .gfield_label
+{ 
+    display:block!important;
+}
+/*#gform_wrapper_1 .gform_footer input
+{
+   border: 1px solid #000000!important;
+   color: #000000;
+   background-color: transparent;
+   border-radius:0px!important;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 600;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   height: 52px;
+   line-height: 52px;
+   padding: 0 48px;
+   text-align:center;
+   letter-spacing:2px;
+}*/
+#gform_wrapper_1.gform_wrapper ul.gform_fields 
+{
+    list-style: none;
+}
+/*#gform_wrapper_1 .gform_footer input:hover
+{ 
+	border: 1px solid #7a98a0!important;
+	color: #f3f6f6;
+	background-color: #7a98a0; 
+}*/
+body .content ul {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+.contact_section .q_icon_list a
+{
+	color:#0095da;
+}
+.archive .content {
+    margin-top: 80px !important;
+}
+body.archive .column1 .qode-news-holder.qode-nl-normal-space .qode-news-item:nth-child(even) {
+    margin-right: 0px;
+}
+body.archive .column1 .qode-news-holder.qode-nl-normal-space .qode-news-item {
+    padding: 18px 15px 18px;
+    background: #f2f2f2;
+    margin-right: 30px;
+	width:48%;
+	margin-bottom:30px;
+}
+body.archive .column1 .cust_lyout .qode-post-title a
+{
+	color: #08112e;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: none;
+	text-align:left;
+	margin:0px 0px 10px!important;
+	display: block;
+	width:100%;
+}
+body.archive .column1 .cust_lyout .qode-post-excerpt-holder
+{
+	display:block!important;
+	text-align: left;
+}
+body.archive .column1 .cust_lyout .qode-news-item-image-holder
+{
+	display:none;
+}
+body.archive .column1 .cust_lyout .qode-post-info-date
+{
+	text-align:left;
+	pointer-events:none;
+	margin-bottom: 0px;
+}
+body.archive .column1 .qode-news-holder .cust_lyout .qode-post-info-date a {
+    font-size: 16px;
+    color: #003e7e;
+    font-weight: 500;
+}
+body.archive .column1 .cust_lyout .qode-layout1-item .qode-post-title
+{
+	margin-top:0px;
+}
+body.archive .column1 .qode-news-holder.qode-nl-normal-space .qode-news-list-inner-holder
+{
+	margin:0px;
+}
+body.archive .two_columns_75_25>.column1
+{
+	margin-top: 80px;
+}
+@media (  min-width:750px ) and ( max-width:1100px )
+{
+	html body.archive .column1 .qode-news-holder.qode-nl-normal-space .qode-news-item
+	{
+		width:47%
+	}
+	body.archive .two_columns_75_25>.column1
+	{
+		margin-top:0px;
+	}
+	body.archive .content
+	{
+		margin-top:0px!important;
+	}
+	
+}
+@media ( max-width:740px )
+{
+	html body.archive .column1 .qode-news-holder.qode-nl-normal-space .qode-news-item
+	{
+		width:100%!important;
+	}
+	body.archive .two_columns_75_25>.column1
+	{
+		margin-top:0px;
+	}
+	body.archive .content
+	{
+		margin-top:0px!important;
+	}
+}
+.single-job_listing .two_columns_75_25>.column2 
+{
+    display: none;
+}
+.single-job_listing .two_columns_75_25>.column1 
+{
+    width: 100% !important;
+}

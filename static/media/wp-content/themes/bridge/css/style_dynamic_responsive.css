@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1000px){
+				.header_bottom,
+		nav.mobile_menu{
+			background-color: #ffffff !important;
+		}
+					.content .container .container_inner.default_template_holder,
+		.content .container .container_inner.page_container_inner {
+			padding-top:32px !important; /*important because of the inline style on page*/
+		}
+	}
+@media only screen and (min-width: 480px) and (max-width: 768px){
+	
+	        section.parallax_section_holder{
+			height: auto !important;
+			min-height: 400px;
+		}
+		}
+@media only screen and (max-width: 768px){
+			h1, h1 a {
+			font-size: 40px; 			line-height: 55px; 		    letter-spacing: -1px; 		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			.title.title_size_medium h1 {
+			font-size: 30px; 			line-height: 36px; 		}
+	
+	
+}
+@media only screen and (max-width: 600px) {
+			h1, h1 a {
+			font-size: 26px; 			line-height: 45px; 		    letter-spacing: -0.7px; 		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			.title.title_size_medium h1 {
+			font-size: 20px; 			line-height: 24px; 		}
+	
+	}
+@media only screen and (max-width: 480px){
+
+			section.parallax_section_holder {
+			height: auto !important;
+			min-height: 400px;
+		}
+	
+		
+	}

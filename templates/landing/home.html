@@ -1,0 +1,466 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+
+{% block content %}
+    <div class="content content_top_margin">
+               <div class="content_inner  ">
+                  <div class="full_width">
+                     <div class="full_width_inner" >
+                        <div class="vc_row wpb_row section vc_row-fluid  vc_custom_1536682709040" style=' text-align:left;'>
+                           <div class=" full_section_inner clearfix">
+                              <div class="wpb_column vc_column_container vc_col-sm-12">
+                                 <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                       <div class="wpb_revslider_element wpb_content_element">
+                                          <link href="https://fonts.googleapis.com/css?family=Oswald:400%7CLato:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+                                          <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                                             <!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+                                             <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.8">
+                                                <ul>
+                                                    {% for prod in slider %}
+                                                        <!-- SLIDE  -->
+                                                           <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="{{ prod.image.url }}"  data-rotate="0"  data-saveperformance="off"  data-title="{{ prod.title }}" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                              <!-- MAIN IMAGE -->
+                                                              <img src="{{ prod.image.url }}"  alt="slide" title="{{ prod.title }}"  width="2000" height="1125" data-lazyload="{{ prod.image.url }}" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="103" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="7" class="rev-slidebg" data-no-retina>
+                                                              <!-- LAYERS -->
+                                                              <!-- LAYER NR. 4 -->
+                                                              <div class="tp-caption TWS-Header tp-layer-selectable  tp-resizeme"
+                                                                 id="slide-6-layer-1"
+                                                                 data-x="['left','left','left','left']" data-hoffset="['20','20','20','40']"
+                                                                 data-y="['middle','middle','middle','top']" data-voffset="['-70','-70','-70','40']"
+                                                                 data-fontsize="['60','60','60','40']"
+                                                                 data-lineheight="['60','60','60','40']"
+                                                                 data-width="['500','500','500','none']"
+                                                                 data-height="none"
+                                                                 data-whitespace="['normal','normal','normal','nowrap']"
+                                                                 data-type="text"
+                                                                 data-responsive_offset="on"
+                                                                 data-frames='[{"delay":300,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                                 data-paddingtop="[0,0,0,0]"
+                                                                 data-paddingright="[0,0,0,0]"
+                                                                 data-paddingbottom="[0,0,0,0]"
+                                                                 data-paddingleft="[0,0,0,0]"
+                                                                 style="z-index: 5; min-width: 500px; max-width: 500px; white-space: normal; letter-spacing: 0px;">{{ prod.title }}</div>
+                                                              <!-- LAYER NR. 5 -->
+                                                              <div class="tp-caption TWS-button rev-btn tp-layer-selectable "
+                                                                 id="slide-6-layer-7"
+                                                                 data-x="['left','left','left','left']" data-hoffset="['20','20','20','40']"
+                                                                 data-y="['middle','middle','middle','top']" data-voffset="['100','100','100','240']"
+                                                                 data-fontsize="['16','16','16','17']"
+                                                                 data-lineheight="['18','18','18','17']"
+                                                                 data-fontweight="['700','700','700','500']"
+                                                                 data-color="['rgb(0,62,126)','rgb(0,62,126)','rgb(0,62,126)','rgb(17,17,17)']"
+                                                                 data-width="none"
+                                                                 data-height="none"
+                                                                 data-whitespace="nowrap"
+                                                                 data-type="button"
+                                                                 data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"","delay":""}]'
+                                                                 data-responsive_offset="on"
+                                                                 data-responsive="off"
+                                                                 data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(0,161,225);bw:2 2 2 2;"}]'
+                                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                                 data-paddingtop="[12,12,12,12]"
+                                                                 data-paddingright="[35,35,35,35]"
+                                                                 data-paddingbottom="[12,12,12,12]"
+                                                                 data-paddingleft="[35,35,35,35]"
+                                                                 style="z-index: 6; white-space: nowrap; letter-spacing: 0px;border-color:rgb(255,255,255);border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Learn More </div>
+                                                              <!-- LAYER NR. 6 -->
+                                                              <div class="tp-caption TWS-Copy tp-layer-selectable  tp-resizeme"
+                                                                 id="slide-6-layer-12"
+                                                                 data-x="['left','left','left','left']" data-hoffset="['20','20','20','40']"
+                                                                 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','-80']"
+                                                                 data-width="['450','450','450','300']"
+                                                                 data-height="none"
+                                                                 data-whitespace="normal"
+                                                                 data-type="text"
+                                                                 data-responsive_offset="on"
+                                                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                                 data-paddingtop="[0,0,0,0]"
+                                                                 data-paddingright="[0,0,0,0]"
+                                                                 data-paddingbottom="[0,0,0,0]"
+                                                                 data-paddingleft="[0,0,0,0]"
+                                                                 style="z-index: 7; min-width: 450px; max-width: 450px; white-space: normal; letter-spacing: 0px;color: white;">{{ prod.description|safe }}</div>
+                                                           </li>
+                                                    {% endfor %}
+                                                </ul>
+                                                <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+                                                   if(htmlDiv) {
+                                                   	htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                   }else{
+                                                   	var htmlDiv = document.createElement("div");
+                                                   	htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+                                                   	document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+                                                   }
+                                                </script>
+                                                <div class="tp-bannertimer" style="height: 8px; background: rgba(255,255,255,0.5);"></div>
+                                             </div>
+                                             <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.TWS-Copy,.TWS-Copy{color:#ffffff;font-size:20px;line-height:25px;font-weight:700;font-style:normal;font-family:Lato;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px 0px 0px 0px;border-radius:0px 0px 0px 0px}.tp-caption.TWS-Header,.TWS-Header{color:#ffffff;font-size:60px;line-height:60px;font-weight:400;font-style:normal;font-family:oswald;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px 0px 0px 0px;border-radius:0px 0px 0px 0px}.tp-caption.TWS-button,.TWS-button{color:#003e7e;font-size:16px;line-height:18px;font-weight:700;font-style:normal;font-family:Lato;text-decoration:none;background-color:#ffffff;border-color:#ffffff;border-style:solid;border-width:2px 2px 2px 2px;border-radius:0px 0px 0px 0px}.tp-caption.TWS-button:hover,.TWS-button:hover{color:#ffffff;text-decoration:none;background-color:#00a1e1;border-color:#ffffff;border-style:solid;border-width:2px 2px 2px 2px;border-radius:0px 0px 0px 0px;cursor:pointer}";
+                                                if(htmlDiv) {
+                                                	htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                }else{
+                                                	var htmlDiv = document.createElement("div");
+                                                	htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+                                                	document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+                                                }
+                                             </script>
+                                             <script type="text/javascript">
+                                                if (setREVStartSize!==undefined) setREVStartSize(
+                                                	{c: '#rev_slider_1_1', responsiveLevels: [1240,1240,1240,480], gridwidth: [1400,1400,1400,480], gridheight: [700,700,700,400], sliderLayout: 'auto'});
+
+                                                var revapi1,
+                                                	tpj;
+                                                (function() {
+                                                	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+                                                	function onLoad() {
+                                                		if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+                                                	if(tpj("#rev_slider_1_1").revolution == undefined){
+                                                		revslider_showDoubleJqueryError("#rev_slider_1_1");
+                                                	}else{
+                                                		revapi1 = tpj("#rev_slider_1_1").show().revolution({
+                                                			sliderType:"standard",
+                                                			jsFileLocation:"/media/wp-content/plugins/revslider/public/assets/js/",
+                                                			sliderLayout:"auto",
+                                                			dottedOverlay:"none",
+                                                			delay:5000,
+                                                			navigation: {
+                                                				keyboardNavigation:"off",
+                                                				keyboard_direction: "horizontal",
+                                                				mouseScrollNavigation:"off",
+                                                 							mouseScrollReverse:"default",
+                                                				onHoverStop:"off",
+                                                				touch:{
+                                                					touchenabled:"on",
+                                                					touchOnDesktop:"off",
+                                                					swipe_threshold: 50,
+                                                					swipe_min_touches: 1,
+                                                					swipe_direction: "horizontal",
+                                                					drag_block_vertical: false
+                                                				}
+                                                				,
+                                                				bullets: {
+                                                					enable:true,
+                                                					hide_onmobile:false,
+                                                					style:"ares",
+                                                					hide_onleave:false,
+                                                					direction:"horizontal",
+                                                					h_align:"center",
+                                                					v_align:"bottom",
+                                                					h_offset:0,
+                                                					v_offset:20,
+                                                					space:5,
+                                                					tmp:'<span class="tp-bullet-title">{{ slider.title }}</span>'
+                                                				}
+                                                			},
+                                                			responsiveLevels:[1240,1240,1240,480],
+                                                			visibilityLevels:[1240,1240,1240,480],
+                                                			gridwidth:[1400,1400,1400,480],
+                                                			gridheight:[700,700,700,400],
+                                                			lazyType:"smart",
+                                                			parallax: {
+                                                				type:"mouse",
+                                                				origo:"slidercenter",
+                                                				speed:400,
+                                                				speedbg:0,
+                                                				speedls:0,
+                                                				levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+                                                				disable_onmobile:"on"
+                                                			},
+                                                			shadow:0,
+                                                			spinner:"spinner2",
+                                                			stopLoop:"off",
+                                                			stopAfterLoops:-1,
+                                                			stopAtSlide:-1,
+                                                			shuffle:"off",
+                                                			autoHeight:"off",
+                                                			hideThumbsOnMobile:"off",
+                                                			hideSliderAtLimit:0,
+                                                			hideCaptionAtLimit:0,
+                                                			hideAllCaptionAtLilmit:0,
+                                                			debugMode:false,
+                                                			fallbacks: {
+                                                				simplifyAll:"off",
+                                                				nextSlideOnWindowFocus:"off",
+                                                				disableFocusListener:false,
+                                                			}
+                                                		});
+                                                	}; /* END OF revapi call */
+
+                                                 }; /* END OF ON LOAD FUNCTION */
+                                                }()); /* END OF WRAPPING FUNCTION */
+                                             </script>
+                                             <script>
+                                                var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #00a1e1 !important; } ';
+                                                var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                                if(htmlDiv) {
+                                                	htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                }
+                                                else{
+                                                	var htmlDiv = document.createElement('div');
+                                                	htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                	document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                                }
+                                             </script>
+                                             <script>
+                                                var htmlDivCss = unescape(".ares.tp-bullets%20%7B%0A%7D%0A.ares.tp-bullets%3Abefore%20%7B%0A%09content%3A%22%20%22%3B%0A%09position%3Aabsolute%3B%0A%09width%3A100%25%3B%0A%09height%3A100%25%3B%0A%09background%3Atransparent%3B%0A%09padding%3A10px%3B%0A%09margin-left%3A-10px%3Bmargin-top%3A-10px%3B%0A%09box-sizing%3Acontent-box%3B%0A%7D%0A.ares%20.tp-bullet%20%7B%0A%09width%3A13px%3B%0A%09height%3A13px%3B%0A%09position%3Aabsolute%3B%0A%09background%3Argba%28229%2C%20229%2C%20229%2C%201%29%3B%0A%09border-radius%3A50%25%3B%0A%09cursor%3A%20pointer%3B%0A%09box-sizing%3Acontent-box%3B%0A%7D%0A.ares%20.tp-bullet%3Ahover%2C%0A.ares%20.tp-bullet.selected%20%7B%0A%09background%3Argba%28255%2C%20255%2C%20255%2C%201%29%3B%0A%7D%0A.ares%20.tp-bullet-title%20%7B%0A%20%20position%3Aabsolute%3B%0A%20%20color%3A136%2C%20136%2C%20136%3B%0A%20%20font-size%3A12px%3B%0A%20%20padding%3A0px%2010px%3B%0A%20%20font-weight%3A600%3B%0A%20%20right%3A27px%3B%0A%20%20top%3A-4px%3B%20%20%0A%20%20background%3Argba%28255%2C255%2C255%2C0.75%29%3B%0A%20%20visibility%3Ahidden%3B%0A%20%20transform%3Atranslatex%28-20px%29%3B%0A%20%20-webkit-transform%3Atranslatex%28-20px%29%3B%0A%20%20transition%3Atransform%200.3s%3B%0A%20%20-webkit-transition%3Atransform%200.3s%3B%0A%20%20line-height%3A20px%3B%0A%20%20white-space%3Anowrap%3B%0A%7D%20%20%20%20%20%0A%0A.ares%20.tp-bullet-title%3Aafter%20%7B%0A%20%20%20%20width%3A%200px%3B%0A%09height%3A%200px%3B%0A%09border-style%3A%20solid%3B%0A%09border-width%3A%2010px%200%2010px%2010px%3B%0A%09border-color%3A%20transparent%20transparent%20transparent%20rgba%28255%2C255%2C255%2C0.75%29%3B%0A%09content%3A%22%20%22%3B%0A%20%20%20%20position%3Aabsolute%3B%0A%20%20%20%20right%3A-10px%3B%0A%09top%3A0px%3B%0A%7D%0A%20%20%20%20%0A.ares%20.tp-bullet%3Ahover%20.tp-bullet-title%7B%0A%20%20visibility%3Avisible%3B%0A%20%20%20transform%3Atranslatex%280px%29%3B%0A%20%20-webkit-transform%3Atranslatex%280px%29%3B%0A%7D%0A%0A.ares%20.tp-bullet.selected%3Ahover%20.tp-bullet-title%20%7B%0A%20%20%20%20background%3Argba%28255%2C%20255%2C%20255%2C%201%29%3B%7D%0A.ares%20.tp-bullet.selected%3Ahover%20.tp-bullet-title%3Aafter%20%7B%0A%20%20border-color%3Atransparent%20transparent%20transparent%20rgba%28255%2C%20255%2C%20255%2C%201%29%3B%0A%7D%0A.ares.tp-bullets%3Ahover%20.tp-bullet-title%20%7B%0A%20%20visibility%3Ahidden%3B%0A%20%20%0A%7D%0A.ares.tp-bullets%3Ahover%20.tp-bullet%3Ahover%20.tp-bullet-title%20%7B%0A%20%20%20%20visibility%3Avisible%3B%0A%20%20%20%20transform%3AtranslateX%280px%29%20translatey%280px%29%3B%0A%20%20-webkit-transform%3AtranslateX%280px%29%20translatey%280px%29%3B%0A%7D%0A%0A%0A%2F%2A%20VERTICAL%20%2A%2F%0A.ares.nav-dir-vertical.nav-pos-hor-left%20.tp-bullet-title%20%7B%20right%3Aauto%3B%20left%3A27px%3B%20%20transform%3Atranslatex%2820px%29%3B%20-webkit-transform%3Atranslatex%2820px%29%3B%7D%20%20%0A.ares.nav-dir-vertical.nav-pos-hor-left%20.tp-bullet-title%3Aafter%20%7B%20%0A%20%20border-width%3A%2010px%2010px%2010px%200%20%21important%3B%0A%20%20border-color%3A%20transparent%20rgba%28255%2C255%2C255%2C0.75%29%20transparent%20transparent%3B%0A%20%20right%3Aauto%20%21important%3B%0A%20%20left%3A-10px%20%21important%3B%20%20%20%0A%7D%0A.ares.nav-dir-vertical.nav-pos-hor-left%20.tp-bullet.selected%3Ahover%20.tp-bullet-title%3Aafter%20%7B%0A%20%20border-color%3A%20%20transparent%20rgba%28255%2C%20255%2C%20255%2C%201%29%20transparent%20transparent%20%21important%3B%0A%7D%0A%0A%0A%0A%2F%2A%20HORIZONTAL%20BOTTOM%20%26%26%20CENTER%20%2A%2F%0A.ares.nav-dir-horizontal.nav-pos-ver-center%20.tp-bullet-title%2C%0A.ares.nav-dir-horizontal.nav-pos-ver-bottom%20.tp-bullet-title%20%7B%20top%3A-35px%3B%20left%3A50%25%3B%20right%3Aauto%3B%20transform%3A%20translateX%28-50%25%29%20translateY%28-10px%29%3B-webkit-transform%3A%20translateX%28-50%25%29%20translateY%28-10px%29%3B%20%7D%20%20%0A%0A.ares.nav-dir-horizontal.nav-pos-ver-center%20.tp-bullet-title%3Aafter%2C%0A.ares.nav-dir-horizontal.nav-pos-ver-bottom%20.tp-bullet-title%3Aafter%20%7B%20%0A%20%20border-width%3A%2010px%2010px%200px%2010px%3B%0A%20%20border-color%3A%20rgba%28255%2C255%2C255%2C0.75%29%20transparent%20transparent%20transparent%3B%0A%20%20right%3Aauto%3B%0A%20%20left%3A50%25%3B%0A%20%20margin-left%3A-10px%3B%0A%20%20top%3Aauto%3B%0A%20%20bottom%3A-10px%3B%0A%20%20%20%20%0A%7D%0A.ares.nav-dir-horizontal.nav-pos-ver-center%20.tp-bullet.selected%3Ahover%20.tp-bullet-title%3Aafter%2C%0A.ares.nav-dir-horizontal.nav-pos-ver-bottom%20.tp-bullet.selected%3Ahover%20.tp-bullet-title%3Aafter%20%7B%0A%20%20border-color%3A%20%20rgba%28255%2C%20255%2C%20255%2C%201%29%20transparent%20transparent%20transparent%3B%0A%7D%0A%0A.ares.nav-dir-horizontal.nav-pos-ver-center%20.tp-bullet%3Ahover%20.tp-bullet-title%2C%0A.ares.nav-dir-horizontal.nav-pos-ver-bottom%20.tp-bullet%3Ahover%20.tp-bullet-title%7B%0A%20%20%20transform%3AtranslateX%28-50%25%29%20translatey%280px%29%3B%0A%20%20-webkit-transform%3AtranslateX%28-50%25%29%20translatey%280px%29%3B%0A%7D%0A%0A%0A%2F%2A%20HORIZONTAL%20TOP%20%2A%2F%0A.ares.nav-dir-horizontal.nav-pos-ver-top%20.tp-bullet-title%20%7B%20top%3A25px%3B%20left%3A50%25%3B%20right%3Aauto%3B%20transform%3A%20translateX%28-50%25%29%20translateY%2810px%29%3B-webkit-transform%3A%20translateX%28-50%25%29%20translateY%2810px%29%3B%20%7D%20%20%0A.ares.nav-dir-horizontal.nav-pos-ver-top%20.tp-bullet-title%3Aafter%20%7B%20%0A%20%20border-width%3A%200%2010px%2010px%2010px%3B%0A%20%20border-color%3A%20%20transparent%20transparent%20rgba%28255%2C255%2C255%2C0.75%29%20transparent%3B%0A%20%20right%3Aauto%3B%0A%20%20left%3A50%25%3B%0A%20%20margin-left%3A-10px%3B%0A%20%20bottom%3Aauto%3B%0A%20%20top%3A-10px%3B%0A%20%20%20%20%0A%7D%0A.ares.nav-dir-horizontal.nav-pos-ver-top%20.tp-bullet.selected%3Ahover%20.tp-bullet-title%3Aafter%20%7B%0A%20%20border-color%3A%20%20transparent%20transparent%20%20rgba%28255%2C%20255%2C%20255%2C%201%29%20transparent%3B%0A%7D%0A%0A.ares.nav-dir-horizontal.nav-pos-ver-top%20.tp-bullet%3Ahover%20.tp-bullet-title%7B%0A%20%20%20transform%3AtranslateX%28-50%25%29%20translatey%280px%29%3B%0A%20%20-webkit-transform%3AtranslateX%28-50%25%29%20translatey%280px%29%3B%0A%7D%0A%0A%0A");
+                                                var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+                                                if(htmlDiv) {
+                                                	htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+                                                }
+                                                else{
+                                                	var htmlDiv = document.createElement('div');
+                                                	htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                                                	document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+                                                }
+
+                                             </script>
+                                          </div>
+                                          <!-- END REVOLUTION SLIDER -->
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="vc_row wpb_row section vc_row-fluid  vc_custom_1536678479631 grid_section" style=' text-align:left;'>
+                           <div class=" section_inner clearfix">
+                              <div class='section_inner_margin clearfix'>
+                                 <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                       <div class="wpb_wrapper">
+                                          <div class="wpb_text_column wpb_content_element ">
+                                             <div class="wpb_wrapper">
+                                                <h1 style="text-align: center;">Results Beyond</h1>
+                                             </div>
+                                          </div>
+                                          <div class="separator  normal   " style=""></div>
+                                          <div class="vc_empty_space"  style="height: 40px" ><span
+                                             class="vc_empty_space_inner">
+                                             <span class="empty_space_image"  ></span>
+                                             </span>
+                                          </div>
+                                          <div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'>
+                                             <div class=" full_section_inner clearfix">
+                                                <div class="wpb_column vc_column_container vc_col-sm-2">
+                                                   <div class="vc_column-inner ">
+                                                      <div class="wpb_wrapper"></div>
+                                                   </div>
+                                                </div>
+                                                 {% for res in results %}
+                                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                                       <div class="vc_column-inner vc_custom_1550156233034">
+                                                          <div class="wpb_wrapper">
+                                                             <div class="wpb_single_image wpb_content_element vc_align_left">
+                                                                <div class="wpb_wrapper">
+                                                                   <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="800" height="200" src="{{ res.image.url }}" class="vc_single_image-img attachment-full" alt="logos"  sizes="(max-width: 800px) 100vw, 800px" /></div>
+                                                                </div>
+                                                             </div>
+                                                             <div class="vc_empty_space"  style="height: 20px" ><span
+                                                                class="vc_empty_space_inner">
+                                                                <span class="empty_space_image"  ></span>
+                                                                </span>
+                                                             </div>
+                                                             <div class="wpb_text_column wpb_content_element ">
+                                                                <div class="wpb_wrapper">
+                                                                   {{ res.description|safe }}
+                                                                </div>
+                                                             </div>
+                                                             <div class="vc_empty_space"  style="height: 20px" ><span class="vc_empty_space_inner">
+                                                                <span class="empty_space_image"  ></span>
+                                                                </span>
+                                                             </div>
+                                                          </div>
+                                                       </div>
+                                                    </div>
+                                                 {% endfor %}
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="vc_row wpb_row section vc_row-fluid  vc_custom_1536682483710 grid_section" style=' text-align:left;'>
+                           <div class=" section_inner clearfix">
+                              <div class='section_inner_margin clearfix'>
+                                 <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                       <div class="wpb_wrapper">
+                                          <div class="qode-advanced-image-gallery  qode-aig-carousel-type qode-large-space  qode-image-behavior-grayscale ">
+                                             <div class="qode-aig-slider qode-owl-slider" data-number-of-items="5" data-enable-loop="yes" data-enable-autoplay="yes" data-slider-speed="3000" data-slider-speed-animation="1500" data-slider-padding="no" data-enable-navigation="no" data-enable-pagination="no">
+                                                {% for logo in logos %}
+                                                     <div class="qode-aig-image">
+                                                       <img width="400" height="200" src="{{ logo.image.url }}" class="attachment-full size-full" alt="logos" sizes="(max-width: 400px) 100vw, 600px" />
+                                                         <span class="aig-gallery-hover">
+                                                       </span>
+                                                     </div>
+                                                {% endfor %}
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div      class="vc_row wpb_row section vc_row-fluid  innov-bey vc_custom_1536683131279 grid_section" style=' text-align:left;'>
+                           <div class=" section_inner clearfix">
+                              <div class='section_inner_margin clearfix'>
+                                 <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                       <div class="wpb_wrapper">
+                                          <div class="wpb_text_column wpb_content_element  whitetext">
+                                             <div class="wpb_wrapper">
+                                                <h1 style="text-align: center;">Innovation Beyond</h1>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div      class="vc_row wpb_row section vc_row-fluid  innovation-blocks vc_custom_1551208831859" style=' text-align:left;'>
+                           <div class=" full_section_inner clearfix">
+                              <div class="wpb_column vc_column_container vc_col-sm-12">
+                                 <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                       <div class='q_elements_holder four_columns responsive_mode_from_1000' >
+                                          <div class='q_elements_item ' data-animation='no'>
+                                             <div class='q_elements_item_inner'>
+                                                <div class='q_elements_item_content q_elements_holder_custom_841043'>
+                                                   <div class="q_image_with_text_over q_iwto_hover">
+                                                      <div class="shader" style = "background-color: rgba(0,0,30,0.25)"></div>
+                                                      <div class="shader_hover" style="background-color: rgba(0,62,126,0.35)"></div>
+                                                      <img itemprop="image" src="wp-content\uploads\2018\09\transparent.png" alt="Artificial Intelligence</p>
+                                                         <p>Working on the intersection of AI and wireless networks, we use smarter, more intelligent ways to emulate the end-user experience in our network - testing and build self-adaptive networks that remedy problems automatically." />
+                                                      <div class="text">
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <h2 class="caption no_icon" style="">
+                                                                     Artificial Intelligence</p>
+                                                                     <p>Working on the intersection of AI and wireless networks, we use smarter, more intelligent ways to emulate the end-user experience in our network - testing and build self-adaptive networks that remedy problems automatically.
+                                                                  </h2>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <div class="desc"><a  itemprop="url" href="what-we-do.html" target="_self"  class="qbutton  white default" style="margin: 20px 0; ">Learn More</a></div>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class='q_elements_item ' data-animation='no'>
+                                             <div class='q_elements_item_inner'>
+                                                <div class='q_elements_item_content q_elements_holder_custom_583879'>
+                                                   <div class="q_image_with_text_over q_iwto_hover">
+                                                      <div class="shader" style = "background-color: rgba(0,0,30,0.25)"></div>
+                                                      <div class="shader_hover" style="background-color: rgba(0,62,126,0.35)"></div>
+                                                      <img itemprop="image" src="wp-content\uploads\2018\09\transparent.png" alt="Smart Cities</p>
+                                                         <p>Empower your city by rethinking wireless network technology. From connected vehicles to smart infrastructures and architectures, our engineers and solutions are at the forefront of powering the smart cities of tomorrow." />
+                                                      <div class="text">
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <h2 class="caption no_icon" style="">
+                                                                     Smart Cities</p>
+                                                                     <p>Empower your city by rethinking wireless network technology. From connected vehicles to smart infrastructures and architectures, our engineers and solutions are at the forefront of powering the smart cities of tomorrow.
+                                                                  </h2>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <div class="desc"><a  itemprop="url" href="who-we-are.html" target="_self"  class="qbutton  white default" style="margin: 20px 0; ">Learn More</a></div>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class='q_elements_item ' data-animation='no'>
+                                             <div class='q_elements_item_inner'>
+                                                <div class='q_elements_item_content q_elements_holder_custom_342858'>
+                                                   <div class="q_image_with_text_over q_iwto_hover">
+                                                      <div class="shader" style = "background-color: rgba(0,0,30,0.25)"></div>
+                                                      <div class="shader_hover" style="background-color: rgba(0,62,126,0.35)"></div>
+                                                      <img itemprop="image" src="wp-content\uploads\2018\09\transparent.png" alt="Machine Learning</p>
+                                                         <p>Bring intelligence to your wireless networks with deep learning. We use machine learning to aggregate and analyze vital network data to get meaningful insights into network performance, anticipate issues, and enforce the user experience." />
+                                                      <div class="text">
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <h2 class="caption no_icon" style="">
+                                                                     Machine Learning</p>
+                                                                     <p>Bring intelligence to your wireless networks with deep learning. We use machine learning to aggregate and analyze vital network data to get meaningful insights into network performance, anticipate issues, and enforce the user experience.
+                                                                  </h2>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <div class="desc"><a  itemprop="url" href="what-we-do.html" target="_self"  class="qbutton  white default" style="margin: 20px 0; ">Learn More</a></div>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class='q_elements_item ' data-animation='no'>
+                                             <div class='q_elements_item_inner'>
+                                                <div class='q_elements_item_content q_elements_holder_custom_627569'>
+                                                   <div class="q_image_with_text_over q_iwto_hover">
+                                                      <div class="shader" style = "background-color: rgba(0,0,30,0.25)"></div>
+                                                      <div class="shader_hover" style="background-color: rgba(0,62,126,0.35)"></div>
+                                                      <img itemprop="image" src="wp-content\uploads\2018\09\transparent.png" alt="Internet of Things</p>
+                                                         <p>Drive the future of IoT and make plans for next-generation networks like 5G. Using the right technologies, the right infrastructure, and smart integration, we can help you realize the maximum potential of IoT." />
+                                                      <div class="text">
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <h2 class="caption no_icon" style="">
+                                                                     Internet of Things</p>
+                                                                     <p>Drive the future of IoT and make plans for next-generation networks like 5G. Using the right technologies, the right infrastructure, and smart integration, we can help you realize the maximum potential of IoT.
+                                                                  </h2>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                         <table>
+                                                            <tr>
+                                                               <td>
+                                                                  <div class="desc"><a  itemprop="url" href="who-we-are.html" target="_self"  class="qbutton  white default" style="margin: 20px 0; ">Learn More</a></div>
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+{% endblock %}
